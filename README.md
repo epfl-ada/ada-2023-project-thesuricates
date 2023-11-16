@@ -7,7 +7,7 @@ The film industry is a growing industry of $42.2 billion in 2019 in theatrical b
 The main metric that we will use in this project to measure the profitability of a movie will be the `multiplier` between the initial cost and the box office revenue. This technique allows us to cancel the effet of inflation and thus compare older movies with the new ones using the same metric. During our analysis, we will try to answer the following questions:
 1. Which characteristics/features of a movie have a significant effect on its box office revenue with respect to its cost (`multiplier`)?
 2. Is there a common `strategy` among low and high budget movies to maximize their multipliers or is it different ? If so, in which aspect(s) of the movie ?
-3. Is it generally sufficient to `increase the budget` of a given movie to increase its multiplier ?
+3. Is it generally sufficient to **increase the budget** of a given movie to increase its multiplier ?
 
 ## :file_folder: Additional Datasets
 * [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page?uselang=fr): using the `WikiPageID` feature present in the [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/), we are able to extand the latter with essential missing features for our analysis. It is a convenient and reliable source to get structured movie data such as `cost` and `currencyCode`, two crucial parameters to compute the `multiplier` for a given movie. This data can be found in our repository under the name film_wiki_data_formatted.csv.
