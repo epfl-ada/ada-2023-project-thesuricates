@@ -14,7 +14,7 @@ The main metric that we will use in this project to measure the profitability of
 * [Conversion rates](ADD_SOURCE_HERE): as explained earlier, the extracted costs are not necessarily in `USD`. This makes sense because many movies are indeed not produced in the United States. It follows that conversion rates data was necessary to conduct a propoer analysis over the costs of movies that are produced in various currencies. The conversion rates of INSERT_TIME_HERE are stored in usd_conversion_rates.json.
 * [TMDB](https://www.themoviedb.org/): even by using Wikidata, we are still missing information about the cost of many movies. We are considering using the TMDB database to extand our `cost` feature to more movies of our current dataset. Their convinient API would be a good option to achieve this task.
 
-## 🛠️: Methods
+## 🛠️ Methods
 
 ### Preprocessing
 
@@ -32,10 +32,10 @@ Regression analysis will be employed to identify optimal strategies for both bud
 
 To ascertain if there is a significant difference in ***Return on Investment*** (ROI) between low and high-budget films, t-tests will be employed. This statistical test will aid in evaluating whether the observed differences in ROI are statistically significant or if they could have occurred by chance.
 
-## 📆: Proposed timeline
+## 📆 Proposed timeline
 ![Alt text](timeline.png)
 
-## 🤝: Organization within the team
+## 🤝 Organization within the team
 <table class="tg" style="table-layout: fixed; width: 342px">
 <colgroup>
 <col style="width: 16px">
