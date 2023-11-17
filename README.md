@@ -4,22 +4,21 @@
 The film industry is a growing industry of $42.2 billion in 2019 in theatrical box office alone. Including home entertainment, it reached [$139 billion in 2018](https://en.wikipedia.org/wiki/Film_industry). However, a big budget doesn't always mean an important ***return on investment*** (ROI). In 2002, the film ***The Adventures of Pluto Nash*** cost $100 million to produce but generated only [$7 million](https://en.wikipedia.org/wiki/The_Adventures_of_Pluto_Nash). This example shows that a high budget is not always synonymous with a profitable return. Is this also true for low-budget films? That's what two producer friends with very different wallets ask themselves over a drink. "I bet I can multiply my investment a lot more than you can with my big-budget film!". "We'll see about that!" replies the other with modesty. Let's follow these two friends on their existing adventure and see what we can do to help! This story will take us to the core of the movie industry by exploring interesting parameters of the [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/) and finding the best choices for both `high` and `low` budget producers.
 
 ## :thought_balloon: Research Questions
-The main metric that we will use in this project to measure the profitability of a movie will be the `multiplier` between the initial cost and the box office revenue. This technique allows us to cancel the effet of inflation and thus compare older movies with the new ones using the same metric. During our analysis, we will try to answer the following questions:
+The main metric that we will use in this project to measure the profitability of a movie will be the `multiplier` between the initial cost and the box office revenue. This technique allows us to cancel the effect of inflation and thus compare older movies with the new ones using the same metric. During our analysis, we will try to answer the following questions:
 1. Which characteristics/features of a movie have a significant effect on its box office revenue with respect to its cost (`multiplier`)?
-2. Is there a common ***strategy*** among low and high budget movies to maximize their multipliers or is it different ? If so, in which aspect(s) of the movie ?
-3. Is it generally sufficient to **increase the budget** of a given movie to increase its multiplier ?
+2. Is there a common ***strategy*** among low and high budget movies to maximize their multipliers or is it different? If so, in which aspect(s) of the movie?
+3. Is it generally sufficient to **increase the budget** of a given movie to increase its multiplier?
 
 ## :file_folder: Additional Datasets
-* [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page?uselang=fr): using the ***WikiPageID*** feature present in the [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/), we are able to extand the latter with essential missing features for our analysis. It is a convenient and reliable source to get structured movie data such as `cost` and `currencyCode`, two crucial parameters to compute the `multiplier` for a given movie. This data can be found in our repository under the name film_wiki_data_formatted.csv.
-* [Conversion rates](ADD_SOURCE_HERE): as explained earlier, the extracted costs are not necessarily in ***USD***. This makes sense because many movies are indeed not produced in the United States. It follows that conversion rates data was necessary to conduct a propoer analysis over the costs of movies that are produced in various currencies. The conversion rates of INSERT_TIME_HERE are stored in usd_conversion_rates.json.
-* [TMDB](https://www.themoviedb.org/): even by using Wikidata, we are still missing information about the cost of many movies. We are considering using the TMDB database to extand our `cost` feature to more movies of our current dataset. Their convinient API would be a good option to achieve this task.
+* [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page?uselang=fr): using the ***WikiPageID*** feature present in the [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/), we can extend the latter with essential missing features for our analysis. It is a convenient and reliable source to get structured movie data such as `cost` and `currencyCode`, two crucial parameters to compute the `multiplier` for a given movie. This data can be found in our repository under the name film_wiki_data_formatted.csv.
+* [Conversion rates](ADD_SOURCE_HERE): as explained earlier, the extracted costs are not necessarily in ***USD***. This makes sense because many movies are indeed not produced in the United States. It follows that conversion rates data was necessary to conduct a proper analysis over the costs of movies that are produced in various currencies. The conversion rates of INSERT_TIME_HERE are stored in usd_conversion_rates.json.
+* [TMDB](https://www.themoviedb.org/): even by using Wikidata, we are still missing information about the cost of many movies. We are considering using the TMDB database to extend our `cost` feature to more movies of our current dataset.
 
 ## 🛠️: Methods
 
 ### Preprocessing
 
-The initial stage involves data preprocessing, cleaning, and merging disparate datasets. For instance, we utilize the [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page?uselang=fr) dataset and potentially [TMDB](https://www.themoviedb.org/) to enrich our dataset with vital missing features. A conversion rate to ***USD*** is applied to all different currencies to ensure uniformity in our data. The resulting dataset contains all the films for which we have information about the `cost` of the film and the `Box_office_revenue`, these two attributes being necessary for our work.
-As an additional step, we will identify and remove potential outliers using confidence intervals to ensure the integrity of our dataset.
+In the initial phase, we preprocess, clean, and merge datasets, using [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page?uselang=fr) and potentially [TMDB](https://www.themoviedb.org/) for enrichment. We standardize currencies to ***USD*** for data uniformity. The resulting dataset includes all films with `cost` and `Box_office_revenue` information, crucial for our analysis. As an additional step, we'll identify and remove potential outliers using confidence intervals, ensuring dataset integrity.
 
 ### Separation of Low and High Budget Films
 
@@ -83,7 +82,7 @@ Statistical tests are employed to assess the significance of differences in ***R
     </td>
     <td>
         <ul>
-            <li>Optimization of the ouput, Statistical analysis</li>
+            <li>Optimization of the output, Statistical analysis</li>
             <li>Visualization Tasks</li>
         </ul>
     </td>
@@ -98,7 +97,7 @@ Statistical tests are employed to assess the significance of differences in ***R
     </td>
     <td>
         <ul>
-            <li>Optimization of the ouput, Statistical analysis</li>
+            <li>Optimization of the output, Statistical analysis</li>
             <li>Visualization Tasks</li>
         </ul>
     </td>
