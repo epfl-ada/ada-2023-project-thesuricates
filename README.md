@@ -22,7 +22,7 @@ In the initial phase, we preprocess, clean, and merge datasets, using [Wikidata]
 
 ### Separation of Low and High Budget Films
 
-To distinguish between `low` and `high`-budget films, we categorize films into five-year groups based on their release dates. The top 30% of films with the highest budgets and the bottom 30% with the lowest budgets are then identified within each time frame. This process mitigates the impact of ***inflation*** on budget categorization. Subsequently, all high-budget films from different periods will be regrouped into a single high-budget category, and the same will be done for low-budget films. The focus will then shift to analyzing the `multiplier` for each film. The use of the multiplier helps neutralize inflation effects within each category, ensuring a fair comparison across different years. 
+To distinguish between `low` and `high`-budget films, we categorize films into five-year groups based on their release dates. The top 25% of films with the highest budgets and the bottom 25% with the lowest budgets are then identified within each time frame. This process mitigates the impact of ***inflation*** on budget categorization. Subsequently, all high-budget films from different periods will be regrouped into a single high-budget category, and the same will be done for low-budget films. The focus will then shift to analyzing the `multiplier` for each film. The use of the multiplier helps neutralize inflation effects within each category, ensuring a fair comparison across different years. 
 
 ### Regression
 

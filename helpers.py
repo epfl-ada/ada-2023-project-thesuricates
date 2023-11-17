@@ -5,6 +5,7 @@
 # This file contain all the helper function 
 import requests
 import json
+import pandas as pd
 
 # Function to convert currency using exchange rate json file
 def convert_to_usd(path, amount, currency):
@@ -54,3 +55,10 @@ def get_wikipedia_page_id(film_name):
         return None
     
 
+# Convert our movies release date to datetime
+def convert_to_datetime(date_str):
+    try:
+        return pd.to_datetime(date_str)
+    except ValueError:
+        # if there is only the year, add a month and day (1st of January)
+        return pd.to_datetime(date_str + '-01-01')
