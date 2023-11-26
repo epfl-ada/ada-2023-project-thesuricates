@@ -62,3 +62,4 @@ def convert_to_datetime(date_str):
     except ValueError:
         # if there is only the year, add a month and day (1st of January)
         return pd.to_datetime(date_str + '-01-01')
+
