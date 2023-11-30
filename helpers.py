@@ -58,8 +58,14 @@ def get_wikipedia_page_id(film_name):
 # Convert our movies release date to datetime
 def convert_to_datetime(date_str):
     try:
+        # Check if the string is just a year (4 digits)
+        if len(date_str) == 4 and date_str.isdigit():
+            date_str += "-01-01"
+
+        # Convert to datetime
         return pd.to_datetime(date_str)
-    except ValueError:
-        # if there is only the year, add a month and day (1st of January)
-        return pd.to_datetime(date_str + '-01-01')
+    except ValueError as e:
+        # Handle the case where the conversion fails
+        print(f"Error converting '{date_str}': {e}")
+        return None
 
