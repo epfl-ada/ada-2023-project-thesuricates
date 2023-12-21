@@ -69,3 +69,7 @@ def convert_to_datetime(date_str):
         print(f"Error converting '{date_str}': {e}")
         return None
 
+def split_string(input_string):
+    result = input_string.split(":")
+    parts = result
+    return parts
