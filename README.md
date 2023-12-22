@@ -1,5 +1,8 @@
 # :movie_camera: Budget Battles: Maximizing Returns in Filmmaking Odyssey
 
+## Datastory
+Follow us in this cinematographic odyssey by discovering our [datastory](https://tomasvddc.github.io/)
+
 ## Abstract
 The film industry is a growing industry of $42.2 billion in 2019 in theatrical box office alone. Including home entertainment, it reached [$139 billion in 2018](https://en.wikipedia.org/wiki/Film_industry). However, a big budget doesn't always mean an important ***return on investment*** (ROI). In 2002, the film ***The Adventures of Pluto Nash*** cost $100 million to produce but generated only [$7 million](https://en.wikipedia.org/wiki/The_Adventures_of_Pluto_Nash). This example shows that a high budget is not always synonymous with a profitable return. Is this also true for low-budget films? That's what two producer friends with very different wallets ask themselves over a drink. "I bet I can multiply my investment a lot more than you can with my big-budget film!". "We'll see about that!" replies the other with modesty. Let's follow these two friends on their existing adventure and see what we can do to help! This story will take us to the core of the movie industry by exploring interesting parameters of the [CMU Movie Summary Corpus](http://www.cs.cmu.edu/~ark/personas/) and finding the best choices for both `high` and `low` budget producers.
 
